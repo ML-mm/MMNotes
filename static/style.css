@@ -1,0 +1,43 @@
+.not-visible {
+    display: none;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('/media/note-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nesthead {
+    height: 100vh;
+    min-height: 500px;
+    background-color: transparent;
+    background-image: url('/media/note-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+.detailhead {
+    height: 100vh;
+    min-height: 500px;
+    background-color: transparent;
+    background-image: url('/media/note-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+.signhead {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(/media/note-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,7 @@
+<div class="card border rounded border-1 border-info mb-3" id="cards">
+    <div class="card-body">
+        <h5 class="card-title">{{ object.title }}</h5>
+        <p class="card-text">{{ object.description }}</p>
+        <a href="{% url 'notes:notes-detail' pk=object.id %}" class="btn btn-primary">Detail</a>
+    </div>
+</div>

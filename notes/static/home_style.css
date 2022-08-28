@@ -1,0 +1,14 @@
+#row-card {
+    display: block;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+#cards {
+    --bs-card-bg: none;
+    /**background-color: rgba(245, 245, 245, 0);**/
+    background-color: transparent;
+    background-image: url('/media/note-1.jpg');
+    /**background-size: cover;**/
+    background-position: center;
+    background-repeat: no-repeat;
+}

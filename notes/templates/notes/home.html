@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'home.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-light">I created this webapp to help develop my django skills.</h2>
+            <p>Here is where the notes will go. Maybe.</p>
+        </div>
+    </section>
+{% endblock %}

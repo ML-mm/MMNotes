@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'notelist.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'home_style.css' %}">
+{% endblock %}
+
+{% block header %}
+    <header class="nesthead mt-5 pt-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-start">
+                <div class="col-12 note-list">
+                    {% for obj in object_list %}
+                        <div class="row" id="row-card">
+                            {% include "notes/notescard.html" with object=obj %}
+                        </div>
+                    {% endfor %}
+                    {% if page_obj.has_previous %}
+                        <a class="prev-page" href="?page={{ page_obj.previous_page_number }}">◀️Previous Notes</a>
+                    {% endif %}
+                    {% if page_obj.has_next %}
+                        <p class="pagination justify-content-end">
+                            <a class="next-page" href="?page={{ page_obj.next_page_number }}">More Notes ▶️</a>
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
