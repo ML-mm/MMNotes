@@ -1,6 +1,7 @@
 # Default ignored files
 .env
 .idea/
+.idea/*
 **/__pycache__
 __pycache__/
 /shelf/
